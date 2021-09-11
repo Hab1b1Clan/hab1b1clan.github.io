@@ -1,10 +1,33 @@
 button {
   cursor: pointer;
 }
+.center {
+  justify-content: center;
+  display: flex;
+}
 .b1 {
-  background-color: blue;
-  padding: 20px;
-  margin: 50px;
-  border-width: 0px;
+  background-color: red;
+  padding: 25px;
+  margin: 6px;
+  border: 0px;
   border-radius: 5px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 40px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+h1 {
+  position: absolute;
+  text-align: center;
+  font-size: 60px;
+  top: 80px;
+  left: 50%;
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
 }
