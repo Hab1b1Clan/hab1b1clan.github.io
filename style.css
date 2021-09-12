@@ -4,6 +4,7 @@ html {
 }
 body {
   min-height: 100%;
+  margin: 0;
 }
 button {
   cursor: pointer;
@@ -53,13 +54,24 @@ button {
 }
 #pin-screen-aboutus {
   position: fixed;
-  top: 16px;
-  margin: 0px;
+  top: 12px;
   left: 1%;
+  margin: 0px;
 }
 #pin-screen-contactus {
   position: fixed;
-  top: 16px;
+  top: 12px;
   right: 1%;
   margin: 0px;
+}
+.head-bg {
+  background: fixed;
+  background-image: url("fortcraftbg.jpg");
+  background-size: cover;
+  padding-top: 400px;
+  padding-left: 100%;
+}
+.top-bar {
+  padding: 20;
+  background-color: white;
 }
