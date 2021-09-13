@@ -66,8 +66,9 @@ button {
 }
 .head-bg {
   background: fixed;
-  background-image: url("fortcraftbg.jpg");
+  background-image: url("hab1b1bg.png");
   background-size: cover;
+  background-position: 0px 56%;
   padding-top: 400px;
   padding-left: 100%;
 }
