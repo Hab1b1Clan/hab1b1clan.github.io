@@ -102,3 +102,46 @@ button {
   color: white;
   background-color: rgba(0, 0, 0, 0.5);
 }
+.p404 {
+  position: relative;
+  font-size: 26px;
+  text-align: center;
+}
+.button-p404-mainpage {
+  text-align: center;
+  background-color: blue;
+  padding: 20px;
+  text-decoration: none;
+  color: aliceblue;
+  position: relative;
+  top: 150px;
+  font-size: 30px;
+  border-radius: 5px;
+  border-width: 4px;
+  border-style: solid;
+  border-color: darkblue;
+  transition-duration: 200ms;
+}
+.button-p404-mainpage:hover {
+  background-color: transparent;
+  color: black;
+  border-color: blue;
+}
+.pin-screen-store {
+  position: fixed;
+  color: white;
+  top: 3px;
+  right: 110px;
+  margin: 0px;
+  padding: 2px;
+  transition-duration: 0.3s;
+  border-width: 3px;
+  border-style: solid;
+  border-color: green;
+  border-radius: 3px;
+  text-decoration: none;
+}
+.pin-screen-store:hover {
+  background-color: green;
+  border-color: rgb(0, 75, 0);
+}
