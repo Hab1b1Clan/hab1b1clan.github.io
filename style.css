@@ -113,3 +113,11 @@ button {
   transition-duration: 0.2s;
   text-decoration: none;
 }
+.link-member-page {
+  text-decoration: none;
+  color: black;
+}
+.link-member-page:hover {
+  color: #00a39b;
+  text-decoration: underline;
+}
