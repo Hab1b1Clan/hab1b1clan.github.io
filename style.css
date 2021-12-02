@@ -52,49 +52,17 @@ button {
   transform: translateY(-1px);
   background-color: rgb(255, 0, 0);
 }
-#pin-screen-aboutus {
-  position: fixed;
-  color: white;
-  top: 3px;
+.pin-screen-aboutus {
   left: 3px;
-  margin: 0px;
-  padding: 2px;
-  transition-duration: 0.3s;
-  border: white;
-  border-width: 3px;
-  border-style: solid;
-  border-color: green;
-  border-radius: 3px;
-  text-decoration: none;
 }
-#pin-screen-aboutus:hover{
-  background-color: green;
-  border-color: rgb(0, 75, 0);
-}
-#pin-screen-contactus {
-  position: fixed;
-  color: white;
-  top: 3px;
+.pin-screen-contactus {
   right: 3px;
-  margin: 0px;
-  padding: 2px;
-  transition-duration: 0.3s;
-  border-width: 3px;
-  border-style: solid;
-  border-color: green;
-  border-radius: 3px;
-  text-decoration: none;
 }
-#pin-screen-contactus:hover{
-  background-color: green;
-  border-color: rgb(0, 75, 0);
-}
-#head-bg { 
+#head-bg {
   background-image: url("hab1b1bg.png");
   background-size: cover;
   background-position: 50%;
-
-} 
+}
 .top-bar {
   padding: 20;
 }
@@ -128,20 +96,20 @@ button {
   border-color: blue;
 }
 .pin-screen-store {
+  right: 110px;
+}
+.pin-screen-youtube-s {
+  left: 93px;
+}
+.pin-screen:hover {
+  color: aqua;
+}
+.pin-screen {
   position: fixed;
   color: white;
-  top: 3px;
-  right: 110px;
   margin: 0px;
   padding: 2px;
-  transition-duration: 0.3s;
-  border-width: 3px;
-  border-style: solid;
-  border-color: green;
-  border-radius: 3px;
+  top: 3px;
+  transition-duration: 0.2s;
   text-decoration: none;
-}
-.pin-screen-store:hover {
-  background-color: green;
-  border-color: rgb(0, 75, 0);
 }
