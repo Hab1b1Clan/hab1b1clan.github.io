@@ -115,9 +115,12 @@ button {
 }
 .link-member-page {
   text-decoration: none;
-  color: black;
+  color: #a39a00;
 }
 .link-member-page:hover {
-  color: #00a39b;
+  color: #7a7400;
   text-decoration: underline;
+}
+.pin-screen-members {
+  right: 172px;
 }
