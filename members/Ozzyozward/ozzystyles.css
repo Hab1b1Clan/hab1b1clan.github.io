@@ -1,0 +1,23 @@
+* {
+  font-family: Poppins;
+}
+
+.socials {
+  text-align: center;
+  font-size: 30px;
+}
+.youtuber-b-s-0 {
+  background-color: rgb(200, 0, 0);
+  padding: 15px;
+  position: relative;
+  top: 200px;
+  border-radius: 5px;
+  text-decoration: none;
+  color: white;
+  transition-duration: 0.2s;
+}
+.youtuber-b-s-0:hover {
+  background-color: rgb(255, 50, 50);
+  box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.5);
+  color: black;
+}
