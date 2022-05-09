@@ -1,64 +1,107 @@
 <!DOCTYPE html>
-<html lang="en" >
-    <head>
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="style.css">
-        <title>Hab1b1 Clan</title>
-        <meta content="Hab1b1 Clan" property="og:title" />
-        <meta content="Join Hab1b1 Clan to take part in Fortnite and Minecraft events!" property="og:description" />
-        <meta content="https://hab1b1clan.github.io/" property="og:url" />
-        <meta content="https://hab1b1clan.github.io/hab1b1bg-cut.png" property="og:image" />
-        <meta content="#43B581" data-react-helmet="true" name="theme-color" />
-        <script>
-            var isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
-            if (isMobile) {
-                alert("You are on mobile and this site is meant for PC. The site may look weird on mobile. It is recommended to turn on 'Desktop site'");
-}
-        </script>
-    </head>
-    <body id="head-bg">
-        <div>
-            <br>
-        </div>
-        <div class="top-bar" id="top-page-index1">
+<html lang="en">
 
-        </div>
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/styles/main.css">
+  <title>Hab1b1 Clan</title>
+</head>
+
+<body id="page-top">
+  <header>
+    <nav>
+      <div>
+        <a href="#page-top" onclick="removeHashes();">Home</a>
+        <a href="javascript:void(0)"
+          onclick="removeHashes(); highlightDiv(document.getElementById('socials-home'), 600)">Socials</a>
+        <a href="javascript:void(0)"
+          onclick="removeHashes(); highlightDiv(document.getElementById('members-home'), 600)">Members</a>
+        <a href="javascript:void(0)"
+          onclick="removeHashes(); highlightDiv(document.getElementById('store-home'), 600)">Store</a>
+      </div>
+    </nav>
+  </header>
+  <section class="index-main-section-home" id="index-home-section">
+    <div>
+      <h1 class="h1-norm-index">Hab1b1 Clan</h1>
+      <div>
+        <a href="qaJ2DVvVJr" class="default-btn btn-mainpage-center">Join Hab1b1 Clan</a>
+      </div>
+      <div>
+        <a href="javascript:void(0)" onclick="removeHashes(); windowScrollOnY('#more')" class="index-veiw-more-btn">More
+          <br><img src="/src/img/down-arrow.svg" alt="down arrow"></a>
+        <br>
+      </div>
+    </div>
+  </section>
+  <br>
+  <section class="index-master-section" id="more">
+    <div class="inner-secmas">
+      <h1>Hab1b1 Clan</h1>
+      <div>
         <div>
-            <div style="position: absolute; padding: 18px 100%;top: 0px;background-color: rgba(0, 0, 0, 0.7);; position: fixed;">
-                <a class="pin-screen-aboutus pin-screen" href="#about">About Us</a>
-                <a class="pin-screen-contactus pin-screen" href="#contact">Contact Us</a>
-                <a class="pin-screen-store pin-screen" href="store/">Store</a>
-                <a class="pin-screen-youtube-s pin-screen" href="s/youtube">Youtube</a>
-                <a class="pin-screen-members pin-screen" href="members">Members</a>
-            </div>
-            <div>
-                <h1 class="h1-norm-index" style="margin: 80px; position: unset">Hab1b1 Clan</h1>    
-            </div>
-            <div style="text-align: center; margin: 200px;">
-                <a class="join-index" href="https://discord.gg/qaJ2DVvVJr" target="_blank">Join Hab1b1 Clan!</a>
-            </div>
-            <div id="about" style="margin: 300px 90px 0px;">
-                <br>
-                <div style="margin: 200px 0px 0px;" class="gray-text-overlaybg">
-                    <h2 style="text-align: center;">About Us</h2>
-                    <p style="font-size: 1.3em;text-align: center;">Hab1b1 Clan is a Fortnite/Minecraft clan. We host Fortnite and Minecraft events. If you would like to join us click <a style="color: lightblue;" href="https://discord.gg/qaJ2DVvVJr" target="_blank">here</a>.</p>
-                </div>
-            </div>
-            <div style="margin: 450px 200px 0px; text-align: center;" id="contact" class="gray-text-overlaybg">
-                <h1>Contact Information</h1>
-                <h3>Use this to contact us.</h3>
-                <div style="font-size: 1.3em;margin-top: 30px 0px 0px" >
-                    <p><strong>Email:</strong> officialhab1b1clan@gmail.com</p>
-                </div>
-            </div>
-            <div style="margin: 270px 200px 0px ;text-align: center;">
-                <a href="#top-page-index1" style="font-size: 1.1em;text-align: center;color: lightblue;" >Back to top</a>
-            </div>
+          <h3>About:</h3>
+          <br>
+          <p>Hab1b1 Clan is a gaming clan. We started in september 2021 as a small group of poeple who liked to play
+            video
+            games our goal is to grow our community and invite more people in. We host gaming events. If you would like
+            to join
+            us in some awsome events such
+            as a Minecraft or FnF tournament,
+            click here!</p>
         </div>
-    </body>
+        <br><br>
+        <div>
+          <h3>Contact Info</h3>
+          <h4>Use this to contact us.</h4>
+          <br>
+          <p><b>Email:</b> officialhab1b1clan@gmail.com</p>
+        </div>
+      </div>
+      <br>
+      <br>
+      <div id="socials-home">
+        <h1>Socials</h1>
+        <br>
+        <div>
+          <a href="https://www.youtube.com/channel/UCKaz0U1MmxOhuo5ikv67r-g" target="_blank">Youtube</a><br>
+          <a href="javascript:void(0)">Coming soon</a><br>
+          <a href="javascript:void(0)">Coming soon</a><br>
+          <a href="javascript:void(0)">Coming soon</a><br>
+          <a href="javascript:void(0)">Coming soon</a><br>
+        </div>
+      </div>
+      <br>
+      <br>
+      <div id="members-home">
+        <h1>Members</h1>
+        <br>
+        <div>
+          <div class="tooltip"><a href="Reddstone35" target="_blank" class="link-member-page">👑 Reddstone35<span
+                class="tooltiptext">Owner</span></a></div>,
+          <div class="tooltip"><a href="CozyClipz" target="_blank" class="link-member-page">👑 CozyClipz<span
+                class="tooltiptext">Owner</span></a></div>,
+          <a href="Zakywoot" target="_blank" class="link-member-page">Zakywoot</a>,
+          <a href="Ozzyozward" target="_blank" class="link-member-page">Ozzyozward</a>,
+          <a href="Zyloh.Dr11pyy" target="_blank" class="link-member-page">Zyloh.Dr11pyy</a>,
+          <a href="Sethpride" target="_blank" class="link-member-page">Sethpride</a>
+        </div>
+      </div>
+      <br>
+      <br>
+      <div id="store-home">
+        <h1>Store</h1>
+        <br>
+        <div>
+          <p>The store is not finished. Progress on the store will start when we get ~50+ members. To become a member
+            join our discord server</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <script src="/src/scripts/main/index.js"></script>
+</body>
+
 </html>
