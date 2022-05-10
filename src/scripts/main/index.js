@@ -1,13 +1,29 @@
-
+const queryString = window.location.search;
+const urlParams = new URLSearchParams(queryString);
+const redirOnloadId = urlParams.get('redirect-onload-id');
 var body = document.body, html = document.documentElement;
 var height = Math.max( body.scrollHeight, body.offsetHeight, html.clientHeight, html.scrollHeight, html.offsetHeight );
+
+setTimeout(() => {
+  if (redirOnloadId == 1) {
+    scrollToElement('#socials-home', true)
+  } else if (redirOnloadId == 2) {
+    scrollToElement('#members-home', true)
+  } else if (redirOnloadId == 3) {
+    scrollToElement('#store-home', true)
+  }
+}, 100);
+
 
 
 function removeHashes() {
   setTimeout(() => {
     history.pushState("", document.title, window.location.pathname + window.location.search);
+    var clean_uri = location.protocol +"//"+ location.host + location.pathname;
+    window.history.replaceState({}, document.title, clean_uri);
   }, 5);
 }
+
 
 function scrollToElement(elSelector, highlight) {
   var el = document.querySelector(elSelector)
@@ -44,4 +60,6 @@ document.body.style.height = `${height}px`
 
 document.getElementById("more").style.top = `${window.innerHeight}px`
 document.getElementsByTagName('html')
-console.log(window.innerHeight)
+
+
+removeHashes()
