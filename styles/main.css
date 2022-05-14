@@ -71,6 +71,9 @@ nav a:hover {
   border-color: white;
 }
 
+html {
+  height: 100%;
+}
 
 body {
   margin: 0;
@@ -78,6 +81,7 @@ body {
   background-size: 300% 300%;
   animation: bg-move-index 15s ease-in-out infinite;
   background-attachment: fixed;
+
 }
 
 button {

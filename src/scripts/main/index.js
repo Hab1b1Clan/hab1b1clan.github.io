@@ -2,6 +2,7 @@ const queryString = window.location.search;
 const urlParams = new URLSearchParams(queryString);
 const redirOnloadId = urlParams.get('redirect-onload-id');
 var body = document.body, html = document.documentElement;
+var masterSection = document.getElementById("more")
 var height = Math.max( body.scrollHeight, body.offsetHeight, html.clientHeight, html.scrollHeight, html.offsetHeight );
 
 setTimeout(() => {
@@ -53,10 +54,16 @@ function windowScrollOnY() {
 }
 
 window.onresize = function() {
+  console.log("resize")
+  var el = document.querySelector('#more')
+  var elRect = el.getBoundingClientRect()
+  var bodyHeight = ((elRect.top + window.scrollY) - (elRect.bottom - window.scrollY))
+  console.log(bodyHeight)
   document.getElementById("more").style.top = `${window.innerHeight}px`
+  document.body.style.height = `calc(100% + ${bodyHeight})px`
 } 
 
-document.body.style.height = `${height}px`
+document.body.style.height = `calc(100% + ${bodyHeight})px`
 
 document.getElementById("more").style.top = `${window.innerHeight}px`
 document.getElementsByTagName('html')
