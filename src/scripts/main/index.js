@@ -4,6 +4,9 @@ const redirOnloadId = urlParams.get('redirect-onload-id');
 var body = document.body, html = document.documentElement;
 var masterSection = document.getElementById("more")
 var height = Math.max( body.scrollHeight, body.offsetHeight, html.clientHeight, html.scrollHeight, html.offsetHeight );
+var nav = document.getElementsByTagName("header")[0]
+var navRect = nav.getBoundingClientRect()
+var navbarHeight = ((navRect.top) - (navRect.bottom))
 
 setTimeout(() => {
   if (redirOnloadId == 1) {
@@ -46,21 +49,24 @@ function scrollToElement(elSelector, highlight) {
   }
 }
 
+
+
 function windowScrollOnY() {
   var el = document.querySelector('#more')
   var elRect = el.getBoundingClientRect()
-  newScroll = (elRect.top + window.scrollY) - 50
+  newScroll = (elRect.top + window.scrollY) + navbarHeight
   window.scroll(0, newScroll)
 }
 
+var el2 = document.querySelector('#more')
+var elRect2 = el2.getBoundingClientRect()
+var bodyHeight = ((elRect2.top + window.scrollY) - (elRect2.bottom - window.scrollY))
+
 window.onresize = function() {
-  console.log("resize")
-  var el = document.querySelector('#more')
-  var elRect = el.getBoundingClientRect()
-  var bodyHeight = ((elRect.top + window.scrollY) - (elRect.bottom - window.scrollY))
-  console.log(bodyHeight)
   document.getElementById("more").style.top = `${window.innerHeight}px`
-  document.body.style.height = `calc(100% + ${bodyHeight})px`
+  console.log("resize")
+  document.body.style.height = `calc(100% + ${bodyHeight}px)`
+  navbarHeight = ((navRect.top + window.scrollY) - (navRect.bottom - window.scrollY))
 } 
 
 document.body.style.height = `calc(100% + ${bodyHeight})px`
